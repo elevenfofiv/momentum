@@ -1,38 +1,9 @@
-const h1 = document.querySelector(".hello h1");
-function handleTitleClick() {
-  h1.style.color = "blue";
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+
+function onLoginSubmit(event) {
+  event.preventDefault();
+  console.log(loginInput.value);
 }
 
-function handleMouseEnter() {
-  h1.innerText = "Mouse is here";
-}
-
-function handleMouseLeave() {
-  h1.innerText = "Mouse is gone";
-}
-
-function handleWindowResize() {
-  document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy() {
-  alert("copyer!!!!");
-}
-
-function handleWindowOffline() {
-  alert("SOS On WiFi");
-}
-
-function handleWindowOnline() {
-  alert("All Gooood");
-}
-
-h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
-
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+loginForm.addEventListener("submit", onLoginSubmit);
