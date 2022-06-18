@@ -46,5 +46,5 @@ const artist = document.querySelector("#songs span:last-child");
 
 const todaySong = songs[Math.floor(Math.random() * songs.length)];
 
-song.innerText = todaySong.song;
+song.innerText = todaySong.song + " - ";
 artist.innerText = todaySong.artist;

@@ -8,10 +8,11 @@ body {
 }
 
 #BackgroundImage {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   position: absolute;
   z-index: -1;
-  background-size: 100% 100%;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -21,14 +22,157 @@ body {
   padding: 0;
 }
 
-#clock {
+#topMargin {
+  width: 100%;
+  height: 35%;
+}
+
+#middleSpace {
+  width: 100%;
+  height: 50%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2#clock {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0px;
-  color: antiquewhite;
+  color: ghostwhite;
+  font-size: 100px;
+  /* padding-top: 90px; */
+}
+
+#greeting {
+  height: 20%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  color: ghostwhite;
   font-size: 50px;
-  padding-top: 40px;
+}
+
+#login-form input {
+  width: 300px;
+  height: 50px;
+  border: 0px;
+  border-bottom: 3px solid white;
+  background: transparent;
+  color: white;
+  font-size: 25px;
+}
+
+#login-form input::placeholder {
+  color: white;
+  font-size: 25px;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form button {
+  width: 60px;
+  height: 40px;
+  border: 0px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  outline: none;
+  background: transparent;
+}
+
+#login-form button:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+}
+
+#todo-form {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#todo-form input {
+  width: 300px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid whitesmoke;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-listSpace {
+  width: 100%;
+  height: 25%;
+  margin: 5px;
+  padding: 3px 5%;
+  display: flex;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#todo-list {
+  height: 100%;
+}
+
+#todo-listSpace::-webkit-scrollbar {
+  display: none;
+}
+
+#todo-list li {
+  padding: 5px;
+  font-size: 15px;
+  list-style: none;
+}
+
+#todo-list li button {
+  background: transparent;
+  border: 0px;
+  color: red;
+  font-size: 20px;
+  font-weight: large;
+}
+
+#bottomSpace {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#songs {
+  font-size: 25px;
+  color: aliceblue;
+}
+
+#weather {
+  font-size: 25px;
+  color: aliceblue;
 }
 
 .hidden {
