@@ -1,3 +1,36 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#BackgroundImage {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  background-size: 100% 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  color: antiquewhite;
+  font-size: 50px;
+  padding-top: 40px;
+}
+
 .hidden {
   display: none;
 }
